@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'IoT Unisinos | Placas de pressão',
+  title: 'IoT Unisinos - Placas de pressão',
   description:
     'Projeto extensionista da disciplina de IoT da Universidade do Vale do Rio do Sinos em apoio ao setor comunitário com foco na fisioterapia'
 };
