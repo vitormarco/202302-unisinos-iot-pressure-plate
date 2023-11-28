@@ -1,10 +1,11 @@
 import Bar from './Bar';
+import { IProgressBarProps } from './types';
 import Wrapper from './Wrapper';
 
-const ProgressBar = () => {
+const ProgressBar = (props: IProgressBarProps) => {
   return (
-    <Wrapper>
-      <Bar value={40} />
+    <Wrapper {...props}>
+      <Bar value={props.value} />
     </Wrapper>
   );
 };
