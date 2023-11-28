@@ -11,7 +11,6 @@ html,
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  height: 200svh;
 }
 
 ::-webkit-scrollbar {
