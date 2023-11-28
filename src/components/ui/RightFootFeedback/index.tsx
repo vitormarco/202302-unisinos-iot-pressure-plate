@@ -1,12 +1,13 @@
 import FootPrint from '@/icons/FootPrint';
+import { mergeClassName } from '@/utils/mergeClassName';
+import { IRightFootFeedbackProps } from './types';
 
-const RightFootFeedback = () => {
-  return (
-    <FootPrint
-      className="-scale-x-100 fill-slate-950   transition-colors duration-300 ease-in-out"
-      size={160}
-    />
-  );
+const defaultStyles = '-scale-x-100 transition-colors duration-300 ease-in-out';
+
+const RightFootFeedback = ({ isOverPressure = false }: IRightFootFeedbackProps) => {
+  const bgColor = isOverPressure ? 'fill-red-500' : 'fill-slate-950';
+
+  return <FootPrint className={mergeClassName(defaultStyles, bgColor)} size={160} />;
 };
 
 export default RightFootFeedback;

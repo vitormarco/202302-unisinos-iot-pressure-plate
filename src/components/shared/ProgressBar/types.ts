@@ -1,4 +1,5 @@
 export interface IProgressBarProps {
+  className?: string;
   min?: number;
   max?: number;
   value?: number;
