@@ -9,12 +9,12 @@ const TextFeedback = ({ info }: { info?: InfosType }) => {
   );
 
   return (
-    <Card className="flex flex-col justify-start gap-2 border border-slate-400">
-      <h1 className="mb-8 w-full text-xl font-bold">Informações do paciente</h1>
+    <Card className="flex flex-col justify-start gap-5 border border-slate-400">
+      <h1 className="w-full text-xl font-bold">Informações do paciente</h1>
 
       <ul className="grid grid-cols-1 gap-3">
-        <li className="mb-2 grid grid-cols-1 gap-2">
-          <span className="text-lg font-bold">MASSA CORPORAL</span>
+        <li className="grid grid-cols-1">
+          <span className="text-lg font-bold">Massa corporal</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Peso lado esquerdo:</span>
@@ -26,10 +26,10 @@ const TextFeedback = ({ info }: { info?: InfosType }) => {
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Peso total:</span>
-          <span>{getTextToShow(info?.kg?.total, '(kg)')}</span>
+          <span className="pb-5">{getTextToShow(info?.kg?.total, '(kg)')}</span>
         </li>
-        <li className="my-2 grid grid-cols-1 gap-2 ">
-          <span className="text-lg font-bold">PRESSÃO</span>
+        <li className="grid grid-cols-1 gap-2 border-t-2">
+          <span className="pt-5 text-lg font-bold">Pressão</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Percentual lado esquerdo:</span>
