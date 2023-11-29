@@ -13,7 +13,7 @@ const TextFeedback = ({ info }: { info?: InfosType }) => {
       <h1 className="mb-8 w-full text-xl font-bold">Informações do paciente</h1>
 
       <ul className="grid grid-cols-1 gap-3">
-        <li className="mb-2 grid grid-cols-2 gap-2">
+        <li className="mb-2 grid grid-cols-1 gap-2">
           <span className="text-lg font-bold">MASSA CORPORAL</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
@@ -28,7 +28,7 @@ const TextFeedback = ({ info }: { info?: InfosType }) => {
           <span className="text-lg font-semibold">Peso total:</span>
           <span>{getTextToShow(info?.kg?.total, '(kg)')}</span>
         </li>
-        <li className="my-2 grid grid-cols-2 gap-2 ">
+        <li className="my-2 grid grid-cols-1 gap-2 ">
           <span className="font-bold">PRESSÃO</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
