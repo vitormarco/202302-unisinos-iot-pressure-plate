@@ -25,11 +25,11 @@ const TextFeedback = ({ info }: { info?: InfosType }) => {
           <span>{getTextToShow(info?.kg?.right, '(kg)')}</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
-          <span className="text-lg font-semibold">Peso total:</span>
+          <span className="font-semibold">Peso total:</span>
           <span>{getTextToShow(info?.kg?.total, '(kg)')}</span>
         </li>
         <li className="my-2 grid grid-cols-1 gap-2 ">
-          <span className="font-bold">PRESSÃO</span>
+          <span className="text-lg font-bold">PRESSÃO</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Percentual lado esquerdo:</span>
