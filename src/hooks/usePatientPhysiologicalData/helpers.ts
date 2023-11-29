@@ -2,7 +2,6 @@ import { getKg } from '@/utils/mass';
 import { getPercentage } from '@/utils/percentage';
 import { PressureType } from './types';
 
-const MAX_PRESSURE = 21000; // 50kg
 const PROPORTIONAL_PRESSURE_KG = 420;
 
 function getNaturalNumbers(value: number) {
@@ -14,8 +13,10 @@ function getNaturalNumbers(value: number) {
 }
 
 function getPressurePercentage(pressure: PressureType) {
-  const left = getNaturalNumbers(getPercentage(pressure.left, MAX_PRESSURE));
-  const right = getNaturalNumbers(getPercentage(pressure.right, MAX_PRESSURE));
+  const totalPressure = pressure.left + pressure.right;
+
+  const left = Number(getNaturalNumbers(getPercentage(pressure.left, totalPressure)).toFixed(2));
+  const right = Number(getNaturalNumbers(getPercentage(pressure.right, totalPressure)).toFixed(2));
 
   return { left, right };
 }

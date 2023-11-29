@@ -11,5 +11,5 @@ export function getSubtractionPercentageLeftRight(left?: number, right?: number)
     return undefined;
   }
 
-  return Math.abs(left - right);
+  return Number(Math.abs(left - right).toFixed(2));
 }
