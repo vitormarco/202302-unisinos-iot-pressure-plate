@@ -21,4 +21,5 @@ export type InfosType = {
     isLeft: boolean;
     isRight: boolean;
   };
+  received?: boolean;
 };

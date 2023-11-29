@@ -5,6 +5,7 @@ import FeetFeedback from '@/components/ui/FeetFeedback';
 import Meter from '@/components/ui/Meter';
 import useGetPressure from '@/hooks/useGetPressure';
 import usePatientPhysiologicalData from '@/hooks/usePatientPhysiologicalData';
+import TextFeedback from '../TextFeedback';
 import { getPressureSideValue } from './helpers';
 
 const Infos = () => {
@@ -16,7 +17,7 @@ const Infos = () => {
   });
 
   return (
-    <>
+    <div className="grid grid-cols-1 gap-20">
       <section className="grid grid-cols-1 gap-8">
         <FeetFeedback
           isLeftOverPressure={info?.overPressure?.isLeft}
@@ -27,7 +28,10 @@ const Infos = () => {
           <ProgressBar min={0} max={100} value={pressureSide.right} />
         </Meter>
       </section>
-    </>
+      <section className="grid grid-cols-1">
+        <TextFeedback info={info} />
+      </section>
+    </div>
   );
 };
 

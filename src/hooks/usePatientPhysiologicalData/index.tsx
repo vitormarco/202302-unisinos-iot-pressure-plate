@@ -7,8 +7,12 @@ const usePatientPhysiologicalData = ({ pressure }: IUsePatientPhysiologicalDataP
 
   useEffect(() => {
     const setupInfos = () => {
+      if (!(pressure.left > 1) && !(pressure.right > 1)) {
+        return undefined;
+      }
+
       const formattedInfo = getPatientInfo(pressure);
-      setInfos(formattedInfo);
+      setInfos({ ...formattedInfo, received: true });
     };
 
     setupInfos();

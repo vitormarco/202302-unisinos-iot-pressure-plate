@@ -1,11 +1,12 @@
+import { mergeClassName } from '@/utils/mergeClassName';
 import { ICardProps } from './types';
 
-const Card = ({ children }: ICardProps) => {
+const DEFAULT_CLASSES =
+  'flex justify-center justify-items-center rounded-xl border-2 p-5 shadow-md';
+
+const Card = ({ children, className }: ICardProps) => {
   return (
-    <div
-      role="contentinfo"
-      className="flex justify-center justify-items-center rounded-xl border-2 p-5 shadow-md"
-    >
+    <div role="contentinfo" className={mergeClassName(DEFAULT_CLASSES, className)}>
       {children}
     </div>
   );
