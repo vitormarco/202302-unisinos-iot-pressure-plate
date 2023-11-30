@@ -1,6 +1,8 @@
+import ThreeDotPulse from '@/components/shared/ThreeDotPulse';
+
 export function getTextToShow(info?: number, sufix = '') {
   if (info === undefined) {
-    return 'Aguardando informação';
+    return <ThreeDotPulse />;
   }
 
   return `${info}${sufix}`;

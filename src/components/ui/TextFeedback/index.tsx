@@ -18,30 +18,30 @@ const TextFeedback = ({ info }: { info?: InfosType }) => {
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Peso lado esquerdo:</span>
-          <span>{getTextToShow(info?.kg?.left, '(kg)')}</span>
+          <span className="flex justify-start">{getTextToShow(info?.kg?.left, '(kg)')}</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Peso lado direito:</span>
-          <span>{getTextToShow(info?.kg?.right, '(kg)')}</span>
+          <span className="flex justify-start">{getTextToShow(info?.kg?.right, '(kg)')}</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Peso total:</span>
-          <span className="pb-5">{getTextToShow(info?.kg?.total, '(kg)')}</span>
+          <span className="flex justify-start">{getTextToShow(info?.kg?.total, '(kg)')}</span>
         </li>
         <li className="grid grid-cols-1 gap-2 border-t-2">
           <span className="pt-5 text-lg font-bold">Pressão</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Percentual lado esquerdo:</span>
-          <span>{getTextToShow(info?.percentage?.left, '%')}</span>
+          <span className="flex justify-start">{getTextToShow(info?.percentage?.left, '%')}</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Percentual lado direito:</span>
-          <span>{getTextToShow(info?.percentage?.right, '%')}</span>
+          <span className="flex justify-start">{getTextToShow(info?.percentage?.right, '%')}</span>
         </li>
         <li className="grid grid-cols-2 gap-4">
           <span className="font-semibold">Diferença percentual:</span>
-          <span>{getTextToShow(differencePercentage, '%')}</span>
+          <span className="flex justify-start">{getTextToShow(differencePercentage, '%')}</span>
         </li>
       </ul>
     </Card>
