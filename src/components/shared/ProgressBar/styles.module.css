@@ -1,0 +1,24 @@
+.wrapper {
+  @apply bg-grey-transparent-15;
+  @apply rounded-r;
+  @apply w-full;
+
+  box-shadow: inset 0px 2px 4px hsl(0, 0%, 50%, 0.35);
+}
+
+.wrapperBar {
+  @apply rounded-r;
+  overflow: hidden;
+}
+
+.bar {
+  @apply transition-all;
+  @apply duration-300;
+
+  height: 12px;
+  width: var(--width);
+}
+
+.default-bg-color {
+  background-color: hsl(240deg 80% 60%);
+}

@@ -1,7 +1,9 @@
+import Infos from '@/components/ui/Infos';
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hello World!</h1>
+    <main className="mx-auto my-24 flex min-h-screen flex-col items-center px-2">
+      <Infos />
     </main>
   );
 }
