@@ -1,5 +1,5 @@
 <h1 align="center">
-  UNISINOS - Projeto extensionista de Iot
+  UNISINOS - IoT Extension Project
 </h1>
 
 <p align="center">
@@ -13,15 +13,22 @@
     <img alt="Typescript" src="https://img.shields.io/badge/typescript-%233178C6.svg?style=for-the-badge&logo=typescript&logoColor=%23FFFFFF" />
   </a>
   <a target="_blank" href="https://tailwindcss.com/">
-    <img alt="Tailwind" src="https://img.shields.io/badge/tailwind%20css-%230ea5e9.svg?style=for-the-badge&logo=tailwind%20css&logoColor=%23FFFFFF" />
-  </a>
+    <img alt="Tailwind" src="https://img.shields.io/badge/tailwind%20css-%230ea5e9.svg?style=for-the-badge&logo=tailwind%20css&logoColor=%23FFFFFF" />
+  </a>
 </p>
 
-## Sobre o projeto
+<div align="center">
+  <img alt="project running" src="./git/project-running.gif" />
+</div>
 
-O projeto de Placas de Pressão visa abordar a distribuição desigual de força nas pernas de uma pessoa ao ficar em pé, fornecendo uma solução visual para identificar e analisar possíveis desequilíbrios. Em situações normais, a força é equitativamente distribuída entre as pernas; no entanto, em casos de lesões musculares ou ósseas, essa distribuição pode ser comprometida.
+## About the Project
 
-## Tecnologias
+The Pressure Plates project aims to address the uneven force distribution on a person's legs while standing, providing a visual solution to identify and analyze possible imbalances. In normal situations, force is evenly distributed between the legs; however, in cases of muscle or bone injuries, this distribution can be compromised.
+
+[**Aplicação frontend**](https://202302-unisinos-iot-pressure-plate.vercel.app/) <br />
+[**Simulador do microcontrolador**](https://wokwi.com/projects/382779389314853889)
+
+## Technologies
 
 - _[TypeScript](https://www.typescriptlang.org/)_
 - _[React](https://react.dev/)_
@@ -29,34 +36,33 @@ O projeto de Placas de Pressão visa abordar a distribuição desigual de força
 - _[Tailwind](https://tailwindcss.com/)_
 - _[Eslint](https://eslint.org/)_
 
-## Como rodar esse projeto
+## How to Run this Project
 
-Para clonar e executar esta aplicação, você precisará ter [Git](https://git-scm.com), [Node.js](https://nodejs.org/pt-br/) e [NPM](https://www.npmjs.com/) instalados em seu computador.
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/) installed on your computer.
 
-### Requisitos e Versões
+### Requirements and Versions
 
-     Node.js: >= 18.17.0
-     NPM: >= 6.0.0
-     NPX: >= 5.2.0
-     Yarn: >= 3
+- Node.js: >= 18.17.0
+- NPM: >= 6.0.0
+- NPX: >= 5.2.0
+- Yarn: >= 3
 
-### Clona o repositório
+### Clone the Repository
 
 ```bash
-# Clonar com https
+# Clone with https
 $ git clone https://github.com/vitormarco/202302-unisinos-iot-pressure-plate.git
 
-# ou
+# or
 
 # Cloning with SSH
 $ git clone git@github.com:vitormarco/202302-unisinos-iot-pressure-plate.git
 
-
-# Acesse o pasta do projeto no terminal/cmd
+# Access the project folder in the terminal/cmd
 $ cd 202302-unisinos-iot-pressure-plate
 ```
 
-### 🚀 Inicie o projeto
+### 🚀 Start the Project
 
 ```bash
 # Install all dependencies
